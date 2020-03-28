@@ -19,6 +19,25 @@ body {
   background-color:white;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color:white;
+}
+.flex-container > button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20x;
+  cursor: pointer;
+}
+
 .header {
   background-color: #f1f1f1;
   padding: 20px;
@@ -46,39 +65,37 @@ body {
 <img id="pict" src="Blank.png" width=80% height=(80/22)%>
 </div>
 
-<table style="width:100%">
-  <tr>
-    <th> <button class="button" type="button" onclick="pict(1)"> A Major </button> </th>
-    <th> <button class="button" type="button" onclick="pict(2)"> A# Major </button> </th>
-    <th> <button class="button" type="button" onclick="pict(3)"> B Major </button> </th>
-    <th> <button class="button" type="button" onclick="pict(4)"> C Major </button> </th>
-    <th> <button class="button" type="button" onclick="pict(5)"> C# Major </button> </th>
-    <th> <button class="button" type="button" onclick="pict(6)"> D Major </button> </th>
-    <th> <button class="button" type="button" onclick="pict(7)"> D# Major </button> </th>
-    <th> <button class="button" type="button" onclick="pict(8)"> E Major </button> </th>
-    <th> <button class="button" type="button" onclick="pict(9)"> F Major </button> </th>
-    <th> <button class="button" type="button" onclick="pict(10)"> F# Major </button> </th>
-    <th> <button class="button" type="button" onclick="pict(11)"> G Major </button> </th>
-    <th> <button class="button" type="button" onclick="pict(12)"> G# Major </button> </th>
-  </tr>
-  <tr>
-    <th> <button class="button" type="button" onclick="pict(13)"> A Minor </button> </th>
-    <th> <button class="button" type="button" onclick="pict(14)"> A# Minor </button> </th>
-    <th> <button class="button" type="button" onclick="pict(15)"> B Minor </button> </th>
-    <th> <button class="button" type="button" onclick="pict(16)"> C Minor </button> </th>
-    <th> <button class="button" type="button" onclick="pict(17)"> C# Minor </button> </th>
-    <th> <button class="button" type="button" onclick="pict(18)"> D Minor </button> </th>
-    <th> <button class="button" type="button" onclick="pict(19)"> D# Minor </button> </th>
-    <th> <button class="button" type="button" onclick="pict(20)"> E Minor </button> </th>
-    <th> <button class="button" type="button" onclick="pict(21)"> F Minor </button> </th>
-    <th> <button class="button" type="button" onclick="pict(22)"> F# Minor </button> </th>
-    <th> <button class="button" type="button" onclick="pict(23)"> G Minor </button> </th>
-    <th> <button class="button" type="button" onclick="pict(24)"> G# Minor </button> </th>
-  </tr>
-</table>
+<div class="flex-container">
+    <button onclick="pict(1)"> A Major </button> 
+    <button onclick="pict(2)"> A# Major </button> 
+    <button onclick="pict(3)"> B Major </button> 
+    <button onclick="pict(4)"> C Major </button> 
+    <button onclick="pict(5)"> C# Major </button> 
+    <button onclick="pict(6)"> D Major </button> 
+    <button onclick="pict(7)"> D# Major </button> 
+    <button onclick="pict(8)"> E Major </button> 
+    <button onclick="pict(9)"> F Major </button> 
+    <button onclick="pict(10)"> F# Major </button> 
+    <button onclick="pict(11)"> G Major </button> 
+    <button onclick="pict(12)"> G# Major </button> 
+</div>
+
+<div class="flex-container">
+    <button onclick="pict(13)"> A Minor </button> 
+    <button onclick="pict(14)"> A# Minor </button> 
+    <button onclick="pict(15)"> B Minor </button>
+    <button onclick="pict(16)"> C Minor </button> 
+    <button onclick="pict(17)"> C# Minor </button> 
+    <button onclick="pict(18)"> D Minor </button>
+    <button onclick="pict(19)"> D# Minor </button>
+    <button onclick="pict(20)"> E Minor </button> 
+    <button onclick="pict(21)"> F Minor </button>
+    <button onclick="pict(22)"> F# Minor </button>
+    <button onclick="pict(23)"> G Minor </button>
+    <button onclick="pict(24)"> G# Minor </button>
+</div>
 
 <script>
-
 function pict(Let) {
     var pic;
     if (Let == 1) {
