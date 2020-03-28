@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+.button {
+  background-color: darkblue;
+  color: white;
+  margin: 10px;
+  padding: 20px;
+}
+</style>
+
+<h1>Chord Sheet - Jack Gilman</h1>
+
+<p>Choose a chord</p>
+
+<img id="pict" src="Blank.png" width=80% height=(80/22)%>
+
+<table style="width:100%">
+  <tr>
+    <th> <button class="button" type="button" onclick="pict(1)"> A Major </button> </th>
+    <th> <button class="button" type="button" onclick="pict(2)"> A# Major </button> </th>
+    <th> <button class="button" type="button" onclick="pict(3)"> B Major </button> </th>
+    <th> <button class="button" type="button" onclick="pict(4)"> C Major </button> </th>
+    <th> <button class="button" type="button" onclick="pict(5)"> C# Major </button> </th>
+    <th> <button class="button" type="button" onclick="pict(6)"> D Major </button> </th>
+    <th> <button class="button" type="button" onclick="pict(7)"> D# Major </button> </th>
+    <th> <button class="button" type="button" onclick="pict(8)"> E Major </button> </th>
+    <th> <button class="button" type="button" onclick="pict(9)"> F Major </button> </th>
+    <th> <button class="button" type="button" onclick="pict(10)"> F# Major </button> </th>
+    <th> <button class="button" type="button" onclick="pict(11)"> G Major </button> </th>
+    <th> <button class="button" type="button" onclick="pict(12)"> G# Major </button> </th>
+  </tr>
+  <tr>
+    <th> <button class="button" type="button" onclick="pict(13)"> A Minor </button> </th>
+    <th> <button class="button" type="button" onclick="pict(14)"> A# Minor </button> </th>
+    <th> <button class="button" type="button" onclick="pict(15)"> B Minor </button> </th>
+    <th> <button class="button" type="button" onclick="pict(16)"> C Minor </button> </th>
+    <th> <button class="button" type="button" onclick="pict(17)"> C# Minor </button> </th>
+    <th> <button class="button" type="button" onclick="pict(18)"> D Minor </button> </th>
+    <th> <button class="button" type="button" onclick="pict(19)"> D# Minor </button> </th>
+    <th> <button class="button" type="button" onclick="pict(20)"> E Minor </button> </th>
+    <th> <button class="button" type="button" onclick="pict(21)"> F Minor </button> </th>
+    <th> <button class="button" type="button" onclick="pict(22)"> F# Minor </button> </th>
+    <th> <button class="button" type="button" onclick="pict(23)"> G Minor </button> </th>
+    <th> <button class="button" type="button" onclick="pict(24)"> G# Minor </button> </th>
+  </tr>
+</table>
+
+<script>
+
+function pict(Let) {
+    var pic;
+    if (Let == 1) {
+        pic = "A.png"
+    } 
+    if (Let == 2) {
+        pic = "ASharp.png"
+    }
+    if (Let == 3) {
+        pic = "B.png"
+    } 
+    if (Let == 4) {
+        pic = "C.png"
+    }
+    if (Let == 5) {
+        pic = "CSharp.png"
+    } 
+    if (Let == 6) {
+        pic = "D.png"
+    }
+    if (Let == 7) {
+        pic = "DSharp.png"
+    } 
+    if (Let == 8) {
+        pic = "E.png"
+    }
+    if (Let == 9) {
+        pic = "F.png"
+    } 
+    if (Let == 10) {
+        pic = "FSharp.png"
+    }
+    if (Let == 11) {
+        pic = "G.png"
+    } 
+    if (Let == 12) {
+        pic = "GSharp.png"
+    }
+    if (Let == 13) {
+        pic = "Am.png"
+    } 
+    if (Let == 14) {
+        pic = "ASharpM.png"
+    }
+    if (Let == 15) {
+        pic = "Bm.png"
+    } 
+    if (Let == 16) {
+        pic = "Cm.png"
+    }
+    if (Let == 17) {
+        pic = "CSharpM.png"
+    } 
+    if (Let == 18) {
+        pic = "Dm.png"
+    }
+    if (Let == 19) {
+        pic = "DSharpM.png"
+    }
+    if (Let == 20) {
+        pic = "Em.png"
+    } 
+    if (Let == 21) {
+        pic = "Fm.png"
+    }
+    if (Let == 22) {
+        pic = "FSharpM.png"
+    } 
+    if (Let == 23) {
+        pic = "Gm.png"
+    }
+    if (Let == 24) {
+        pic = "GSharpM.png"
+    } 
+    
+    document.getElementById('pict').src = pic;
+}
+
+</script>
+
+</body>
+</html>
